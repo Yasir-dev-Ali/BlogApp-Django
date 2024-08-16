@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+</head>
+<body>
+    {% comment %} <h1>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
+    <p>{{ post.date }}</p>
+    <a href="{% url 'main:home' %}">Back</a>
+    <a href="{% url 'main:edit' post.id %}">Edit</a>
+    <a href="{% url 'main:delete' post.id %}">Delete</a> {% endcomment %}
+    <h1>Post</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum consectetur reiciendis aut voluptate perferendis. Libero rerum dolorum placeat blanditiis deleniti! Neque veritatis eum maiores, nostrum ea reprehenderit perferendis itaque eveniet?</p>
+</body>
+</html>
